@@ -1,4 +1,4 @@
-# Top.gg auto voter claimer
+# Stake.com scraper
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
