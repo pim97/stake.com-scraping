@@ -4,18 +4,17 @@
 
 ## Description
 
-Top.gg is a prominent online platform that serves as a hub for Discord users seeking to enhance their server experiences. It acts as a comprehensive directory of Discord bots and servers, offering a space where bot developers can showcase their creations and server administrators can discover and incorporate new features into their communities. Top.gg enables users to find, review, and rate various bots, helping them make informed decisions about which ones to include in their Discord servers. This platform has become an essential resource for both bot developers and server operators, fostering a dynamic ecosystem of innovation and collaboration within the Discord community.
+Stake.com is a secure online platform that offers engaging skill-based challenges and entertainment for users of all ages. Explore its variety of enjoyable experiences in a safe environment.
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/pim97/scrappey-top.gg-auto-voter.git`
+1. Clone the repository: `git clone https://github.com/pim97/stake.com-scraping.git`
 2. Install the dependencies: `npm install`
 
 ## Usage
 
 1. Replace the following details with your own details in the script file (`create.js`):
    - API_KEY_HERE: Your Scrappey API key found at https://app.scrappey.com/#/ to solve Cloudflare
-   - DISCORD_AUTH: Your discord AUTH token
 2. Run the script: `node create.js`
 
 ## Contributing
@@ -32,4 +31,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - GitHub: [Your GitHub Profile](https://github.com/pim97/)
 
 Keywords for Top.gg Auto Voting Program on GitHub:
-Top.gg Auto Voting, Discord Bots, Voting Automation, Server Growth, API Integration, Scheduled Voting, Bot Development, Community Engagement, Discord Servers, Bot Listing, Voting Rewards, API Tokens, Web Scraping, Automation Tools, Rate Limiting, Server Boosting
+Stake.com, GraphQL, API scraping, Web scraping, Data extraction, Data mining, Betting data, Gambling data, Sports betting, Sports data, GraphQL queries, Data analysis, Python, Web scraping tools, Data scraping techniques, Data integration, Data analytics, Data visualization, Data extraction tools, Web scraping tutorial, Sports betting insights

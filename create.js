@@ -8,11 +8,6 @@ const SCRAPPEY_API_KEY = 'API_KEY';
 const scrappey = new Scrappey(SCRAPPEY_API_KEY);
 
 /**
- * Your discord auth key/token
- */
-const DISCORD_AUTH = 'DISCORD_AUTH_KEY'
-
-/**
  * Scrappey.com is a proxy-wrapper for browsers, it allows you to run browser actions and execute javascript on any website.
  * with advanced options such as caching, proxy rotation, anti-bot and more.
  */
@@ -28,51 +23,12 @@ async function run() {
      * Executes the browser actions requested
      */
     await scrappey.get({
-        session: session.session,
-        url: 'https://top.gg',
-        browserActions: [
-
-            /**
-             * Logging in on discord
-             */
-            {
-                "type": "discord_login",
-                "token": DISCORD_AUTH,
-                "when": "beforeload"
-            },
-
-            /**
-             * Going to discord oauth2 page
-             */
-            {
-                "type": "goto",
-                "url": "https://discord.com/oauth2/authorize?scope=identify%20guilds%20email&redirect_uri=https%3A%2F%2Ftop.gg%2Flogin%2Fcallback&response_type=code&client_id=422087909634736160&state=Lw==",
-            },
-
-            /**
-             * Accepting the oauth2 page
-             */
-            {
-                "type": "click",
-                "cssSelector": "//body/div[@id='app-mount']/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/button[2]",
-            }, 
-
-            /**
-             * Going to page your want to vote on
-             */
-            {
-                "type": "goto",
-                "url": "https://top.gg/servers/1047485354212605952/vote",
-            },
-
-            /**
-             * Click the vote button
-             */
-            {
-                "type": "click",
-                "cssSelector": "//button[contains(text(),'Vote')]"
-            }
-        ]
+        "cmd": "request.post",
+        "url": "https://stake.com/_api/graphql",
+        "postData": "{\"query\":\"query CurrencyConversionRate {\\n info {\\n currencies {\\n name\\n eur: value(fiatCurrency: eur)\\n jpy: value(fiatCurrency: jpy)\\n usd: value(fiatCurrency: usd)\\n brl: value(fiatCurrency: brl)\\n cad: value(fiatCurrency: cad)\\n cny: value(fiatCurrency: cny)\\n idr: value(fiatCurrency: idr)\\n inr: value(fiatCurrency: inr)\\n krw: value(fiatCurrency: krw)\\n php: value(fiatCurrency: php)\\n rub: value(fiatCurrency: rub)\\n mxn: value(fiatCurrency: mxn)\\n dkk: value(fiatCurrency: dkk)\\n }\\n }\\n}\\n\",\"variables\":{}}",
+        "customHeaders": {
+            "content-type": "application/json"
+        }
     })
 
     /**
