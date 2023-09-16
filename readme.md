@@ -32,3 +32,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 Keywords for Top.gg Auto Voting Program on GitHub:
 Stake.com, GraphQL, API scraping, Web scraping, Data extraction, Data mining, Betting data, Gambling data, Sports betting, Sports data, GraphQL queries, Data analysis, Python, Web scraping tools, Data scraping techniques, Data integration, Data analytics, Data visualization, Data extraction tools, Web scraping tutorial, Sports betting insights
+
+## Legal and Ethical Considerations
+
+Remember to adhere to legal and ethical guidelines when scraping websites. Always respect the website's terms of service and scraping policies. Ensure your use of the scraped data complies with applicable laws and regulations, especially regarding data privacy and intellectual property rights. 🚫⚖️
+
+*Disclaimer: This web scraping guide is intended solely for educational and informational purposes. Please use web scraping responsibly and in accordance with the terms and conditions of the target website.* 📚🔍
